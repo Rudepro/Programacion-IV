@@ -54,7 +54,7 @@ ax.axis('off')
 # Crear leyenda manual
 from matplotlib.patches import Patch
 legend_elements = [
-    Patch(facecolor='lightgreen', label='Nodo'),
+    Patch(facecolor='lightblue', label='Nodo'),
     Patch(facecolor='none', edgecolor='black', label='Flecha: relación padre-hijo')
 ]
 plt.legend(handles=legend_elements, loc='lower right')
