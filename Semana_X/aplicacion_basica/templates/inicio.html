@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<h1>¡Hola {{ nombre }}!</h1>
+<p>Bienvenido a tu aplicación Flask personalizada.</p>
+
+<!-- Imagen decorativa -->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlKhLF5pj_KT5Wp5wRShebNBEfEvTo1SpteA&s" alt="Bienvenida" class="img-fluid mb-4 rounded">
+
+<!-- Tabla de ejemplo -->
+<table class="table table-bordered table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Libro Flask</td>
+      <td>$25.00</td>
+      <td><span class="badge bg-success">Disponible</span></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Curso Python</td>
+      <td>$50.00</td>
+      <td><span class="badge bg-warning text-dark">Próximamente</span></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Web Hosting</td>
+      <td>$10.00</td>
+      <td><span class="badge bg-danger">Agotado</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Botón interactivo -->
+<a href="https://chat.openai.com" target="_blank" class="btn btn-primary btn-lg mt-3">
+  Ir a ChatGPT
+</a>
+{% endblock %}
